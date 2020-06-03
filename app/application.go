@@ -16,7 +16,7 @@ func StartApplication() {
 
 	srv := &http.Server{
 		Handler:      router,
-		Addr:         "127.0.0.1:8080",
+		Addr:         "localhost:8082",
 	}
 
 	if err := srv.ListenAndServe(); err != nil {
